@@ -1,0 +1,17 @@
+{
+    "type": "postgres",
+    "username": "ucisaudvpachwm",
+    "password": "2b1200a0160793ecd5dd2a533c170ddae9a73b79c7570fcc6385b1c598ba80ff",
+    "host": "ec2-18-210-51-239.compute-1.amazonaws.com",
+    "port": "5432",
+    "database": "db4r1n1fhmlpfv",
+    "entities": [
+        "src/**/**/*.entity{.ts,js}"
+    ],
+    "migrations": [
+        "src/database/migrations/*{.ts,.js}"
+    ],
+    "cli": {
+        "migrationsDir": "src/database/migrations"
+    }
+}
