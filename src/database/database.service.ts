@@ -23,18 +23,7 @@ export const databaseProviders = [
             } as ConnectionOptions
         }
     })
-]
-//TypeOrmModule.forRoot({
-//    type: 'mysql',
-//    host: 'localhost',
-//    port: 3306,
-//    username: 'root',
-//    password: '',
-//    database: 'cms',
-//    entities: [],
-//    synchronize: true,
-//}),
-//
+];
 
 
 

@@ -6,8 +6,9 @@ import { ConfigService } from './config/config.service';
 import { Configuration } from './config/confg.keys';
 import { UserModule } from './modules/user/user.module';
 import { DatabaseModule } from './database/database.module';
+import { RoleModule } from './modules/role/role.module';
 @Module({
-    imports: [ConfigModule, DatabaseModule, UserModule],
+    imports: [ConfigModule, DatabaseModule, UserModule, RoleModule],
     controllers: [AppController],
     providers: [AppService],
 })
