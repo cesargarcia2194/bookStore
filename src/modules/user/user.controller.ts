@@ -13,17 +13,17 @@ export class UserController {
     constructor(private readonly _userService: UserService) { }
 
     @Get(':id')
-    async  getUser(@Param('id', ParseIntPipe) id: number): Promise<UserDTO> {
-        const user: UserDTO =  await this._userService.get(id);
+    async  getUser(@Param('id', ParseIntPipe) id: number): Promise<User> {
+        const user: User =  await this._userService.get(id);
         return  user;
     }
     @Get()
-    async getUsers(): Promise<UserDTO[]> {
-        const users: UserDTO[]= await this._userService.getAll();
+    async getUsers(): Promise<User[]> {
+        const users: User[]= await this._userService.getAll();
         return users;
     }
     @Post()
-    async creteUser(@Body() user: User): Promise<UserDTO>{
+    async creteUser(@Body() user: User): Promise<User>{
         const detail = new UserDetails();
         user.detail = detail;
         const repo = await getConnection().getRepository(Role);
